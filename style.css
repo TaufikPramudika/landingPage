@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color:#E5E5E5;
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    padding: 0 10%;
+}
+.navbar h1{
+    margin: 42px 0;
+}
+.navbar ul {
+    display: flex;
+    margin: 46px;
+    list-style: none;
+    text-decoration: none;
+    gap: 56px;
+    color: #fff;
+}
+
+.navbar ul li a{
+    text-decoration: none;  
+    color: inherit;
+}
+.btn{
+    width: 147px;
+    height: 46px;
+    margin-top: -10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #c4c4c4;
+}
+.rectangle{
+    position: fixed;
+    width: 1000px;
+    height: 1354.77px;
+    left: 563.03px;
+    top: -247px;
+    z-index: 0;
+    background: #171515;
+    transform: rotate(11.63deg);
+}
+
+.main .title{
+    display: flex;
+    flex-direction: column;
+    margin: 130px 0 0 124px;
+}
+.main .title h1{
+    font-size: 70px;
+}
+.main .sosmed{
+    margin: 50px 0 0 150px;
+}
+.main .sosmed img{
+    padding: 0 20px;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 800px) {
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .main .title{
+        position: relative;
+        margin: 130px 0 0 12px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .main .title h1{
+        font-size: 50px;
+
+    }
+    .main .title p{
+        text-align: center;
+    }
+    .main .sosmed{
+        margin: 50px 0 0 150px;
+        position: fixed;
+    }
+
+  }
